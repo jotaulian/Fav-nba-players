@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+:root {
+  --ff-fuente: "Montserrat", sans-serif;
+  --transition: all 0.3s linear;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+a {
+  line-height: 1.5;
+  font-family: var(--ff-fuente);
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.dark {
+  color: whitesmoke;
+  background-color: #000;
+}
+/* =====================
+SIDEBAR
+===================== */
+.sidebar {
+  background-color: #222;
+  width: 150px;
+  height: 100%;
+  position: fixed !important;
+  z-index: 1;
+  overflow: auto;
+  text-align: center;
+}
+.logo img {
+  width: 110px;
+  height: 110px;
+}
+nav a h4 {
+  margin-top: -1rem;
+}
+.logo {
+  margin-bottom: 3rem;
+}
+.sidebar-link {
+  width: 100%;
+  outline: none;
+  margin-top: 1rem;
+}
+.sidebar-link:hover {
+  background-color: #000;
+}
+.sidebar-link div {
+  border: 2px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* =====================
+HEADER
+===================== */
+#main {
+  margin-left: 150px;
+  /* padding: 12px 24px !important; */
+  text-align: center;
+}
+header {
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  background: linear-gradient(rgba(24, 24, 24, 0.329), rgb(34, 34, 34)),
+    url("./imagenes/header-pic.jpg") center/cover;
+  position: relative;
+}
+
+.contenedor-titulo {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 7%,
+    rgba(9, 9, 121, 1) 31%,
+    rgba(68, 7, 92, 1) 51%,
+    rgb(202, 0, 0) 79%
+  );
+  height: auto;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  font-weight: 700;
+  color: whitesmoke;
+  border: 5px solid whitesmoke;
+  padding: 1rem 1rem;
+  cursor: pointer;
+}
+.contenedor-titulo:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(12, 4, 148, 0.959) 7%,
+    rgb(32, 32, 143) 31%,
+    rgb(98, 21, 129) 51%,
+    rgb(196, 29, 29) 79%
+  );
+}
+
+.contenedor-titulo h1 {
+  /* max-width: 80%; */
+  margin: 0 auto;
+}
+
+/* =====================
+SECCIONES
+===================== */
+.bloque-1 {
+  padding: 1rem 1rem;
+  /* margin-top: 1rem; */
+  margin-bottom: 5rem;
+}
+.text-container {
+  margin: 1rem 0 2rem 0;
+}
+.bloque-1 p {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.bloque-2 {
+  width: 90%;
+  margin: 0 auto 5rem auto;
+}
+.bloque-2 span {
+  font-size: 4rem;
+  color: rgb(253, 55, 194);
+}
+.players-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.players-container a img {
+  height: 545px;
+  object-fit: cover;
+}
+.players-container a img:hover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.players-container a {
+  cursor: pointer;
+}
+.bloque-1 ul li {
+  list-style-type: none;
+}
+.bloque-1 ul li a {
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+.negrita {
+  font-weight: bold;
+  color: #ffee66;
+  font-size: 2rem;
+}
+/* =====================
+BOTONES
+===================== */
+.myButton {
+  /* box-shadow: 0px 1px 0px 0px #fff6af; */
+  background: linear-gradient(to bottom, #fcb977 5%, #ff9419 100%);
+  background-color: #fcb977;
+  border-radius: 7px;
+  border: 3px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 7px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+  margin-top: 3rem;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #f88807 5%, #ff962d 100%);
+  background-color: #ff9419;
+  color: whitesmoke;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+.submit-btn {
+  display: inline-block;
+  /* background: linear-gradient(to bottom, #fcb977 5%, #ff9419 100%); */
+  background: rgb(80, 80, 80);
+  padding: 7px 24px;
+  border-radius: 5px;
+  border: none;
+  color: whitesmoke;
+  font-size: 19px;
+  font-weight: 700;
+  font-family: var(--ff-fuente);
+  text-decoration: none;
+  margin-top: 2rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 0px #222, 0px 8px 0px #000;
+  transition: var(--transition);
+}
+.submit-btn:hover {
+  box-shadow: none;
+  transform: translate(0px, 6px);
+}
+
+/* =====================
+MAGIC
+===================== */
+.magic {
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  background: linear-gradient(rgba(24, 24, 24, 0.329), rgb(34, 34, 34)),
+    url("./imagenes/magic-portada.jpg") center/cover;
+  position: relative;
+}
+/* =====================
+IVERSON
+===================== */
+.iverson {
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  background: linear-gradient(rgba(24, 24, 24, 0.329), rgb(34, 34, 34)),
+    url("./imagenes/iverson-portada.jpg") center/cover;
+  position: relative;
+}
+/* =====================
+NASH
+===================== */
+.nash {
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  background: linear-gradient(rgba(24, 24, 24, 0.329), rgb(34, 34, 34)),
+    url("./imagenes/nash-portada.jpg") center/cover;
+  position: relative;
+}
+/* =====================
+ANIMACION
+===================== */
+.bouncingball {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background: #000;
+  animation: rebota 1.2s;
+  transform: translateY(0px);
+  animation-iteration-count: infinite;
+  position: absolute;
+  margin: 55vh;
+  margin-left: 120px;
+}
+
+@keyframes rebota {
+  0% {
+    top: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  40% {
+  }
+  50% {
+    top: 140px;
+    height: 140px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  55% {
+    top: 160px;
+    height: 120px;
+    -webkit-animation-timing-function: ease-in;
+  }
+  65% {
+    top: 120px;
+    height: 140px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  95% {
+    top: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  100% {
+    top: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+
+/* =====================
+FORMULARIO
+===================== */
+
+.formulario {
+  width: 500px;
+  padding: 40px;
+  margin: 0 auto;
+  background: #222;
+  box-sizing: border-box;
+  border: 2px solid #ff962d;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+.formulario input {
+  /* border: none; */
+  border: 2px solid #ff962d;
+  border-radius: 3px;
+  background-color: white;
+  font-family: var(--ff-fuente);
+  height: 2rem;
+  width: 25rem;
+  text-align: center;
+}
+.formulario select {
+  border: none;
+  background-color: white;
+  font-family: var(--ff-fuente);
+  height: 2rem;
+  width: 25rem;
+  text-align: center;
+  border: 2px solid #ff962d;
+  border-radius: 3px;
+}
+.formulario h2 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.resultados {
+  margin-top: 3rem;
+}
+.titulo-resultados {
+  color: rgb(253, 55, 194);
+}
+.titulo-resultados:hover {
+  color: rgb(32, 32, 143);
+}
+
+/* =====================
+TABLA
+===================== */
+table {
+  margin: 0 auto;
+}

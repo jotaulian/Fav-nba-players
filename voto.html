@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votación</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body class="dark">
+    <!-- INICIO Barra de Navegacion lateral -->
+    <nav class="sidebar">
+        <a href="./index.html" class="logo">
+            <img src="./imagenes/basketball-png-images-6.png" alt="">
+            <h4>BestPG</h4>
+        </a>
+        <a href="./magic.html" class="sidebar-link">
+            <div>
+                <img src="./imagenes/MagicJohnson.jpg" alt="MagicJohnson">
+            </div>
+            <h5>Nº 1</h5>
+        </a>
+        <a href="./iverson.html" class="sidebar-link">
+            <div>
+                <img src="./imagenes/Iverson.jpg" alt="AllenIverson">
+            </div>
+            <h5>Nº 2</h5>
+        </a>
+        <a href="./nash.html" class="sidebar-link">
+            <div>
+                <img src="./imagenes/Steve+Nash.jpg" alt="SteveNash">
+            </div>
+            <h5>Nº 3</h5>
+        </a>
+        <a href="./voto.html" class="myButton">Vota</a>
+    </nav>
+    <!-- FIN Barra de Navegacion lateral -->
+
+    <!-- Vista de Página -->
+    <section id="main">
+
+        <div class="bloque-1">
+            <h1 style="font-size: 3rem;">Dame a conocer tu opinión
+            </h1>
+            <div class="text-container">
+                <p>Además de expresarles mi opinión me gustaría saber que piensan ustedes y cual es su jugador favorito.
+                </p>
+                <p>
+                    Así que les dejo un formulario para que completen. En la lista podrán encontrar mis tres jugadores favoritos y cinco más para que sea mas realista la encuesta:
+                </p>
+            </div>
+            
+            <!-- INICIO FORMULARIO -->
+            <form action="#" class="formulario">
+                <h2>Mi nombre es</h2>
+                <div class="form-input-material">
+                    <input type="text" placeholder=" " autocomplete="off" required />
+                </div>
+                <h2>Creo que el mejor base de la historia es: </h2>
+                <select name="numero1">
+                <!-- Opciones de la lista -->
+                    <option selected>Magic Johnson</option>
+                    <option>Allen Iverson</option>
+                    <option>Steve Nash</option>
+                    <option>Isiah Thomas</option>
+                    <option>Jason Kidd</option>
+                    <option>Chris Paul</option>
+                    <option>Stephen Curry</option>
+                    <option>John Stockton</option>
+                </select>
+    
+                <h2>Luego me quedo con: </h2>
+                <select name="numero2">
+                <!-- Opciones de la lista -->
+                    <option>Magic Johnson</option>
+                    <option selected>Allen Iverson</option>
+                    <option>Steve Nash</option>
+                    <option>Isiah Thomas</option>
+                    <option>Jason Kidd</option>
+                    <option>Chris Paul</option>
+                    <option>John Stockton</option>
+                    <option>Stephen Curry</option>
+                </select>
+    
+                <h2>Y por último: </h2>
+                <select name="numero3">
+                <!-- Opciones de la lista -->
+                    <option>Magic Johnson</option>
+                    <option>Allen Iverson</option>
+                    <option selected>Steve Nash</option>
+                    <option>Isiah Thomas</option>
+                    <option>Jason Kidd</option>
+                    <option>John Stockton</option>
+                    <option>Chris Paul</option>
+                    <option>Stephen Curry</option>
+                </select>
+                <div>
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </div>
+            </form>
+            <!-- FIN FORMULARIO -->
+            <!-- INICIO RESULTADOS -->
+                <div class="resultados">
+                    <h1 class="titulo-resultados">
+                        Por el momento el resultado es:
+                    </h1>
+                    <ol>
+                        <li>Magic Johnson</li>
+                        <li>John Stockton</li>
+                        <li>Stephen Curry</li>
+                        <li>Steve Nash</li>
+                        <li>Allen Iverson</li>
+                        <li>Jason Kidd</li>
+                        <li>Chris Paul</li>
+                        <li>Isiah Thomas</li>
+                    </ol>
+                </div>
+            <!-- FIN RESULTADOS -->
+        </div>
+
+        <!-- INICIO ANIMACION -->
+        <div class="bouncingball">
+            <img src="./imagenes/basketball-png-images-6.png" alt="">
+        </div>
+        <!-- FIN ANIMACION -->
+        <!-- LINK TABLA DE PROPIEDADES -->
+        <a href="./propiedades.html" style="font-weight: bold; margin-bottom: 2rem; border: 2px; font-size: 2rem;">Tabla de
+            propiedades CSS</a>
+    </section>
+</body>
+
+</html>
